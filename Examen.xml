@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<marcadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Esquema 1.xsd">
+<tipoClases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Esquema 1.xsd">
 <clases>
         <aspirante>
             <id_aspirante>001</id_aspirante>
@@ -28,4 +28,4 @@
             </Hasta3erDan>
         </examen>
 </clases>
-</marcadores>
+</tipoClases>
