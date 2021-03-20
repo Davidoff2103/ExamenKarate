@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tipoClases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="Esquema 1.xsd">
-        <aspirante>
-            <id_aspirante>001</id_aspirante>
-            <nombre>Antonio</nombre>
-            <apellidos>Rodríguez Díaz</apellidos>
-            <DNI>40234234B</DNI>
-            <telefono>623141234</telefono>
-            <direccion>Calle Pintor Manuel Maldonado, 7, 18007 Granada</direccion>
-            <fecha_nacimiento>1992-02-21</fecha_nacimiento>
-            <dan>1</dan>
-            <cinturon>Negro</cinturon>
-            <fecha_ingreso_dan>2021-03-19</fecha_ingreso_dan>
-            <fotoAspirante>aspirante.png</fotoAspirante>
-            <tiempo_dan_anterior>1 meses</tiempo_dan_anterior>
-            <fotoDNI>DNI.png</fotoDNI>
-            <fotoCarnetGrados>grados.png</fotoCarnetGrados>
-            <abonarCuota>Sí</abonarCuota>
-        </aspirante>
+<tipoClases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Esquema 1.xsd">
+    <aspirante>
+        <id_aspirante>001</id_aspirante>
+        <nombre>Antonio</nombre>
+        <apellidos>Rodríguez Díaz</apellidos>
+        <DNI>40234234B</DNI>
+        <telefono>623141234</telefono>
+        <direccion>Calle Pintor Manuel Maldonado, 7, 18007 Granada</direccion>
+        <fecha_nacimiento>1992-02-21</fecha_nacimiento>
+        <dan>1</dan>
+        <cinturon>Negro</cinturon>
+        <fecha_ingreso_dan>2021-03-19</fecha_ingreso_dan>
+        <fotoAspirante>aspirante.png</fotoAspirante>
+        <tiempo_dan_anterior>1 meses</tiempo_dan_anterior>
+        <fotoDNI>DNI.png</fotoDNI>
+        <fotoCarnetGrados>grados.png</fotoCarnetGrados>
+        <abonarCuota>Sí</abonarCuota>
+    </aspirante>
 
-        <examen>
-            <Hasta3erDan>
-                <tecnicas>asfasf</tecnicas>
-                <kata>asdasd</kata>
-                <kumite>sgfwegfwe</kumite>
-                <campeonatos>aswdasf</campeonatos>
-            </Hasta3erDan>
-        </examen>
+    <examen>
+        <Hasta3erDan>
+            <tecnicas>asfasf</tecnicas>
+            <kata>asdasd</kata>
+            <kumite>sgfwegfwe</kumite>
+            <campeonatos>aswdasf</campeonatos>
+        </Hasta3erDan>
+    </examen>
 </tipoClases>
