@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tipoClases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Esquema 1.xsd">
-<clases>
+    <clases>
         <aspirante>
             <id_aspirante>001</id_aspirante>
             <nombre>Antonio</nombre>
@@ -18,7 +18,7 @@
             <fotoCarnetGrados>grados.png</fotoCarnetGrados>
             <abonarCuota>Sí</abonarCuota>
         </aspirante>
-        
+
         <examen>
             <Hasta3erDan>
                 <tecnicas>asfasf</tecnicas>
@@ -27,5 +27,5 @@
                 <campeonatos>aswdasf</campeonatos>
             </Hasta3erDan>
         </examen>
-</clases>
+    </clases>
 </tipoClases>
