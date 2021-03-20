@@ -7,6 +7,7 @@
                     <xsd:element name="aspirante" type="tipoAspirante" />
                     <xsd:element name="examen" type="examen" />
                     <xsd:element name="tribunal" type="tipoTribunal" />
+                    <xsd:element name="resultados" type="tipoResultados" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -107,10 +108,10 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="tecnicas" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kata" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kumite" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="campeonatos" type="xsd:string" minOccurs="1" />
+                    <xsd:element name="tecnicas" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="campeonatos" type="tipoResultado" minOccurs="1" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -120,12 +121,12 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="tecnica_directa" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnica_circulares" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnica_piernas" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="teoria" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kata" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kumite" type="xsd:string" minOccurs="1" />
+                    <xsd:element name="tecnica_directa" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_circulares" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_piernas" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="teoria" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -135,14 +136,14 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="tecnica_defensa" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnica_pierna" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnica_directaIndirecta" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnica_combinada" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="teoria" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kata" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kumite" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="aplicacion_tecnica" type="xsd:string" minOccurs="1" />
+                    <xsd:element name="tecnica_defensa" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_pierna" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_directaIndirecta" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_combinada" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="teoria" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicacion_tecnica" type="tipoResultado" minOccurs="1" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -152,19 +153,19 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="tecnica_base" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnica_directa" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnica_indirectaCircular" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnica_pierna" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnica_combinada" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="teoria" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kata" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kumite" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="campeonatos" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnicas" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="aplicaciones" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="aplicacion_teoria" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="demo_libre" type="xsd:string" minOccurs="1" />
+                    <xsd:element name="tecnica_base" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_directa" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_indirectaCircular" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_pierna" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_combinada" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="teoria" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="campeonatos" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnicas" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicaciones" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicacion_teoria" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="demo_libre" type="tipoResultado" minOccurs="1" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -174,18 +175,18 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="variaciones_tecnica" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kumite" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kata" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="aplicacion_tecnica" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="teoria" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kumite" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="campeonatos" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="tecnica" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="aplicaciones" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="aplicacion_tecnica" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="demo_libre" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="attribute5" type="xsd:string" minOccurs="1" />
+                    <xsd:element name="variaciones_tecnica" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicacion_tecnica" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="teoria" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="campeonatos" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicaciones" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicacion_tecnica" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="demo_libre" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="attribute5" type="tipoResultado" minOccurs="1" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -195,11 +196,11 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="kumite" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="kata" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="coloquio" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="aplicacion_tecnica" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="demo_libre" type="xsd:string" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="coloquio" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicacion_tecnica" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="demo_libre" type="tipoResultado" minOccurs="1" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -209,8 +210,8 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="kata" type="xsd:string" minOccurs="1" />
-                    <xsd:element name="coloquio" type="xsd:string" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="coloquio" type="tipoResultado" minOccurs="1" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
@@ -238,10 +239,28 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="id_juez" type="xsd:short" minOccurs="1" maxOccurs="1"/>
+                    <xsd:element name="id_juez" type="tipoId" minOccurs="1" maxOccurs="1"/>
                     <xsd:element name="nombre" type="xsd:string" minOccurs="1" maxOccurs="1"/>
                     <xsd:element name="apellidos" type="xsd:string" minOccurs="1" maxOccurs="1"/>
                     <xsd:element name="diplomaJuez" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="tipoResultado">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Apto"/>
+            <xsd:enumeration value="No apto"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="tipoResultados">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="id_aspirante" type="tipoId" minOccurs="1" maxOccurs="1"/>
+                    <xsd:element name="resultado" type="tipoResultado" minOccurs="1" maxOccurs="1"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>

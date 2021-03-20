@@ -29,16 +29,21 @@
 
     <tribunal jueces="2">
         <juez>
-            <id_juez>1</id_juez>
+            <id_juez>001</id_juez>
             <nombre>Diego</nombre>
             <apellidos>Martínez Penas</apellidos>
             <diplomaJuez>true</diplomaJuez>
         </juez>
         <juez>
-            <id_juez>2</id_juez>
+            <id_juez>002</id_juez>
             <nombre>Raúl</nombre>
             <apellidos>Espínola Jiménez</apellidos>
             <diplomaJuez>true</diplomaJuez>
         </juez>
     </tribunal>
+
+    <resultados>
+        <id_aspirante>001</id_aspirante>
+        <resultado>Apto</resultado>
+    </resultados>
 </tipoClases>
