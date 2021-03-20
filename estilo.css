@@ -1,25 +1,393 @@
-tipoClases{
-    display:block;
+tipoClases {
+    display: block;
+    background: lightcyan;
+    margin: 5px;
 }
-criterios{
+
+aspirante,
+meritosAspirante {
     display: table;
-    border-spacing: 10px;
-    border: black 1px solid;
+    border: red 1px solid;
     margin-left: auto;
     margin-right: auto;
+    background: rgb(255, 210, 127);
 }
-criterios indumentaria::before{
-    content: "Indumentaria: "
+
+meritosAspirante {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-criterios aseoPersonal::before{
-    content: "Aseo Personal: "
+
+meritosAspirante id_aspirante:hover,
+meritosAspirante edad_aspirante:hover,
+meritosAspirante licenciaActualizada:hover,
+meritosAspirante trabajo_escrito:hover{
+    background: white;
+    transition: 0.5s;
 }
-criterios ejecucionTecnica::before{
-    content: "Ejecución Técnica: "
+
+aspirante id_aspirante,
+aspirante nombre,
+aspirante apellidos,
+aspirante DNI,
+aspirante telefono,
+aspirante direccion,
+aspirante fecha_nacimiento,
+aspirante dan,
+aspirante cinturon,
+aspirante fecha_ingreso_dan,
+aspirante fotoAspirante,
+aspirante tiempo_dan_anterior,
+aspirante fotoDNI,
+aspirante fotoCarnetGrados,
+aspirante abonarCuota,
+meritosAspirante id_aspirante,
+meritosAspirante edad_aspirante,
+meritosAspirante licenciaActualizada,
+meritosAspirante trabajoEscrito {
+    display: table-cell;
+    border: red 1.5px solid;
+    padding: 5px;
 }
-criterios valores::before{
-    content: "Valores: "
+
+aspirante id_aspirante:hover,
+aspirante nombre:hover,
+aspirante apellidos:hover,
+aspirante DNI:hover,
+aspirante telefono:hover,
+aspirante direccion:hover,
+aspirante fecha_nacimiento:hover,
+aspirante dan:hover,
+aspirante cinturon:hover,
+aspirante fecha_ingreso_dan:hover,
+aspirante fotoAspirante:hover,
+aspirante tiempo_dan_anterior:hover,
+aspirante fotoDNI:hover,
+aspirante fotoCarnetGrados:hover,
+aspirante abonarCuota:hover {
+    background: white;
+    transition: 0.5s;
 }
+
+aspirante id_aspirante::before {
+    content: "ID Aspirante: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante nombre::before {
+    content: "Nombre: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante apellidos::before {
+    content: "Apellidos: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante DNI::before {
+    content: "DNI: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+
+aspirante telefono::before {
+    content: "Teléfono: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante direccion::before {
+    content: "Dirección: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+
+aspirante fecha_nacimiento::before {
+    content: "Fecha de nacimiento: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante dan::before {
+    content: "DAN: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante cinturon::before {
+    content: "Cinturón: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante fecha_ingreso_dan::before {
+    content: "Fecha ingreso DAN: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante fotoAspirante::before {
+    content: "Foto aspirante: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante tiempo_dan_anterior::before {
+    content: "Tiempo DAN anterior: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante fotoDNI::before {
+    content: "Foto DNI: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante fotoCarnetGrados::before {
+    content: "Foto Carnet Grados:: ";
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+aspirante abonarCuota::before {
+    content: "Cuota abonada: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+meritosAspirante id_aspirante::before {
+    content: "ID Aspirante: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+meritosAspirante edad_aspirante::before {
+    content: "Edad aspirante: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+meritosAspirante licenciaActualizada::before {
+    content: "Licencia actualizada: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+meritosAspirante trabajoEscrito::before {
+    content: "Trabajo escrito: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+tribunal juez {
+    background-color: blue;
+    display: block;
+    padding: 5px;
+}
+
+tribunal juez id_juez,
+tribunal juez nombre,
+tribunal juez apellidos,
+tribunal juez diplomaJuez {
+    background: lightblue;
+    display: block;
+    border: blue 1px solid;
+    padding: 10px;
+}
+
+tribunal juez id_juez:hover,
+tribunal juez nombre:hover,
+tribunal juez apellidos:hover,
+tribunal juez diplomaJuez:hover {
+    background: white;
+    transition: 0.5s;
+}
+
+tribunal juez id_juez::before {
+    content: "ID Juez: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+tribunal juez nombre::before {
+    content: "Nombre: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+tribunal juez apellidos::before {
+    content: "Apellidos: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+tribunal juez diplomaJuez::before {
+    content: "Diploma de juez: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+examen Hasta3erDan,
+criterios {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+examen Hasta3erDan tecnicas,
+examen Hasta3erDan kata,
+examen Hasta3erDan campeonatos,
+criterios indumentaria,
+criterios aseoPersonal,
+criterios ejecucionTecnica,
+criterios valores,
+criterios respuestas {
+    background: rgb(0, 255, 0);
+    display: block;
+    border: black 1px solid;
+    padding: 10px;
+}
+
+examen Hasta3erDan kumite {
+    background: red;
+    display: block;
+    border: black 1px solid;
+    padding: 10px;
+}
+
+examen Hasta3erDan tecnicas:hover,
+examen Hasta3erDan kata:hover,
+examen Hasta3erDan campeonatos:hover,
+criterios indumentaria:hover,
+criterios aseoPersonal:hover,
+criterios ejecucionTecnica:hover,
+criterios valores:hover,
+criterios respuestas:hover {
+    background: greenyellow;
+    transition: 0.5s;
+}
+
+examen Hasta3erDan kumite:hover {
+    background: darkred;
+    transition: 0.5s;
+    color: white;
+}
+
+examen Hasta3erDan tecnicas::before {
+    content: "Técnicas: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+examen Hasta3erDan kata::before {
+    content: "Kata: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+examen Hasta3erDan kumite::before {
+    content: "Kumite: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+examen Hasta3erDan campeonatos::before {
+    content: "Campeonatos: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+criterios indumentaria::before {
+    content: "Indumentaria: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+criterios aseoPersonal::before {
+    content: "Aseo Personal: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+criterios ejecucionTecnica::before {
+    content: "Ejecución Técnica: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+criterios valores::before {
+    content: "Valores: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 criterios respuestas::before {
-    content: "Respuestas: "
+    content: "Respuestas: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+resultados{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    padding: 5px;
+    margin-top: 10px;
+}
+resultados id_aspirante::before{
+    content: "ID Aspirante: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+resultados resultado::before {
+    content: "Resultado final: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+resultados resultado{
+    font-size: 200%;
+}
+
+resultados id_aspirante{
+    background:green;
+    color:white;
+        display: block;
+        border: black 1px solid;
+        padding: 10px;
+}
+resultados resultado {
+    background: rgb(0, 255, 0);
+    display: block;
+    border: black 1px solid;
+    padding: 10px;
 }
