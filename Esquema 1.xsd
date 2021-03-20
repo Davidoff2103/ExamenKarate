@@ -5,8 +5,9 @@
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
                     <xsd:element name="aspirante" type="tipoAspirante" />
-                    <xsd:element name="examen" type="examen" />
                     <xsd:element name="tribunal" type="tipoTribunal" />
+                    <xsd:element name="examen" type="examen" />
+                    <xsd:element name="criterios" type="tipoCriterios" />
                     <xsd:element name="resultados" type="tipoResultados" />
                 </xsd:sequence>
             </xsd:restriction>
@@ -252,6 +253,27 @@
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Apto"/>
             <xsd:enumeration value="No apto"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="tipoCriterios">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="indumentaria" type="tipoNota" minOccurs="1" />
+                    <xsd:element name="aseoPersonal" type="tipoNota" minOccurs="1" />
+                    <xsd:element name="ejecucionTecnica" type="tipoNota" minOccurs="1" />
+                    <xsd:element name="valores" type="tipoNota" minOccurs="1" />
+                    <xsd:element name="respuestas" type="tipoNota" minOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="tipoNota">
+        <xsd:restriction base="xsd:short">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="10"/>
         </xsd:restriction>
     </xsd:simpleType>
 

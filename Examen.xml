@@ -18,15 +18,6 @@
         <abonarCuota>Sí</abonarCuota>
     </aspirante>
 
-    <examen>
-        <Hasta3erDan>
-            <tecnicas>Apto</tecnicas>
-            <kata>Apto</kata>
-            <kumite>Apto</kumite>
-            <campeonatos>Apto</campeonatos>
-        </Hasta3erDan>
-    </examen>
-
     <tribunal jueces="2">
         <juez>
             <id_juez>001</id_juez>
@@ -41,6 +32,23 @@
             <diplomaJuez>true</diplomaJuez>
         </juez>
     </tribunal>
+
+    <examen>
+        <Hasta3erDan>
+            <tecnicas>Apto</tecnicas>
+            <kata>Apto</kata>
+            <kumite>Apto</kumite>
+            <campeonatos>Apto</campeonatos>
+        </Hasta3erDan>
+    </examen>
+
+    <criterios>
+        <indumentaria>9</indumentaria>
+        <aseoPersonal>9</aseoPersonal>
+        <ejecucionTecnica>8</ejecucionTecnica>
+        <valores>8</valores>
+        <respuestas>10</respuestas>
+    </criterios>
 
     <resultados>
         <id_aspirante>001</id_aspirante>
