@@ -1,0 +1,25 @@
+tipoClases{
+    display:block;
+}
+criterios{
+    display: table;
+    border-spacing: 10px;
+    border: black 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+criterios indumentaria::before{
+    content: "Indumentaria: "
+}
+criterios aseoPersonal::before{
+    content: "Aseo Personal: "
+}
+criterios ejecucionTecnica::before{
+    content: "Ejecución Técnica: "
+}
+criterios valores::before{
+    content: "Valores: "
+}
+criterios respuestas::before {
+    content: "Respuestas: "
+}
