@@ -1,5 +1,7 @@
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<xsd:element name="clases" type="tipoClases"/>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+<xsd:element name="tipoClases" type="tipoClases"/>
 <xsd:complexType name="tipoClases">
     <xsd:complexContent>
         <xsd:restriction base="xsd:anyType">
