@@ -19,6 +19,13 @@
         <abonarCuota>Sí</abonarCuota>
     </aspirante>
 
+    <meritosAspirante>
+        <id_aspirante>001</id_aspirante>
+        <edad_aspirante>29</edad_aspirante>
+        <licenciaActualizada>true</licenciaActualizada>
+        <trabajoEscrito>true</trabajoEscrito>
+    </meritosAspirante>
+    
     <tribunal jueces="2">
         <juez>
             <id_juez>001</id_juez>

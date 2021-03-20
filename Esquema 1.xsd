@@ -5,6 +5,7 @@
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
                     <xsd:element name="aspirante" type="tipoAspirante" />
+                    <xsd:element name="meritosAspirante" type="tipoMeritos" />
                     <xsd:element name="tribunal" type="tipoTribunal" />
                     <xsd:element name="examen" type="examen" />
                     <xsd:element name="criterios" type="tipoCriterios" />
@@ -85,6 +86,26 @@
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Sí" />
             <xsd:enumeration value="No" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="tipoMeritos">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="id_aspirante" type="tipoId" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="edad_aspirante" type="tipoEdad" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="licenciaActualizada" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="trabajoEscrito" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="tipoEdad">
+        <xsd:restriction base="xsd:short">
+            <xsd:minInclusive value="15"/>
+            <xsd:maxInclusive value="100"/>
         </xsd:restriction>
     </xsd:simpleType>
 
