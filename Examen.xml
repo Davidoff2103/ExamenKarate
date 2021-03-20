@@ -20,10 +20,25 @@
 
     <examen>
         <Hasta3erDan>
-            <tecnicas>asfasf</tecnicas>
-            <kata>asdasd</kata>
-            <kumite>sgfwegfwe</kumite>
-            <campeonatos>aswdasf</campeonatos>
+            <tecnicas>Apto</tecnicas>
+            <kata>Apto</kata>
+            <kumite>Apto</kumite>
+            <campeonatos>Apto</campeonatos>
         </Hasta3erDan>
     </examen>
+
+    <tribunal jueces="2">
+        <juez>
+            <id_juez>1</id_juez>
+            <nombre>Diego</nombre>
+            <apellidos>Martínez Penas</apellidos>
+            <diplomaJuez>true</diplomaJuez>
+        </juez>
+        <juez>
+            <id_juez>2</id_juez>
+            <nombre>Raúl</nombre>
+            <apellidos>Espínola Jiménez</apellidos>
+            <diplomaJuez>true</diplomaJuez>
+        </juez>
+    </tribunal>
 </tipoClases>
