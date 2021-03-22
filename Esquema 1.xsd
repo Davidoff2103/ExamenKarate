@@ -1,5 +1,10 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+            <xsd:include schemaLocation="Esquema 2.xsd"/>
+            <xsd:include schemaLocation="Esquema 3.xsd"/>
+
     <xsd:element name="tipoClases" type="tipoClases" />
+
     <xsd:complexType name="tipoClases">
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
@@ -89,19 +94,6 @@
         </xsd:restriction>
     </xsd:simpleType>
 
-    <xsd:complexType name="tipoMeritos">
-        <xsd:complexContent>
-            <xsd:restriction base="xsd:anyType">
-                <xsd:sequence>
-                    <xsd:element name="id_aspirante" type="tipoId" minOccurs="1" maxOccurs="1" />
-                    <xsd:element name="edad_aspirante" type="tipoEdad" minOccurs="1" maxOccurs="1" />
-                    <xsd:element name="licenciaActualizada" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
-                    <xsd:element name="trabajoEscrito" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
-                </xsd:sequence>
-            </xsd:restriction>
-        </xsd:complexContent>
-    </xsd:complexType>
-
     <xsd:simpleType name="tipoEdad">
         <xsd:restriction base="xsd:short">
             <xsd:minInclusive value="15"/>
@@ -120,7 +112,6 @@
                     <xsd:element name="CinturonNegroTercerDan" type="tipoTercer" />
                     <xsd:element name="CinturonNegroCuartoDan" type="tipoCuarto" />
                     <xsd:element name="QuintoDanYSuperior" type="tipoQuinto" />
-
                 </xsd:choice>
             </xsd:restriction>
         </xsd:complexContent>
@@ -234,37 +225,6 @@
                 <xsd:sequence>
                     <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
                     <xsd:element name="coloquio" type="tipoResultado" minOccurs="1" />
-                </xsd:sequence>
-            </xsd:restriction>
-        </xsd:complexContent>
-    </xsd:complexType>
-
-    <xsd:complexType name="tipoTribunal">
-        <xsd:complexContent>
-            <xsd:restriction base="xsd:anyType">
-                <xsd:sequence>
-                    <xsd:element name="juez" type="tipoJuez" minOccurs="1" maxOccurs="4"/>
-                </xsd:sequence>
-                <xsd:attribute name="jueces" type="tipoJueces"/>
-            </xsd:restriction>
-        </xsd:complexContent>
-    </xsd:complexType>
-
-    <xsd:simpleType name="tipoJueces">
-        <xsd:restriction base="xsd:short">
-            <xsd:minInclusive value="1"/>
-            <xsd:maxInclusive value="4"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-
-    <xsd:complexType name="tipoJuez">
-        <xsd:complexContent>
-            <xsd:restriction base="xsd:anyType">
-                <xsd:sequence>
-                    <xsd:element name="id_juez" type="tipoId" minOccurs="1" maxOccurs="1"/>
-                    <xsd:element name="nombre" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                    <xsd:element name="apellidos" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                    <xsd:element name="diplomaJuez" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>

@@ -1,0 +1,16 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:include schemaLocation="Esquema 1.xsd"/>
+
+    <xsd:complexType name="tipoMeritos">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="id_aspirante" type="tipoId" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="edad_aspirante" type="tipoEdad" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="licenciaActualizada" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="trabajoEscrito" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+</xsd:schema>
