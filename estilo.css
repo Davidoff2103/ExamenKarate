@@ -21,7 +21,7 @@ meritosAspirante {
 meritosAspirante id_aspirante:hover,
 meritosAspirante edad_aspirante:hover,
 meritosAspirante licenciaActualizada:hover,
-meritosAspirante trabajo_escrito:hover{
+meritosAspirante trabajoEscrito:hover{
     background: white;
     transition: 0.5s;
 }
