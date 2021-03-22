@@ -1,5 +1,5 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-            <xsd:include schemaLocation="Esquema Principal.xsd"/>
+            <xsd:include schemaLocation="Esquema 1.xsd"/>
 
     <xsd:complexType name="tipoMeritos">
         <xsd:complexContent>
