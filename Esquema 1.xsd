@@ -53,7 +53,7 @@
 
     <xsd:simpleType name="tipoTelefono">
         <xsd:restriction base="xsd:integer">
-            <xsd:pattern value="[0-9]{9}" />
+            <xsd:pattern value="[6-7]{1}[0-9]{8}" />
         </xsd:restriction>
     </xsd:simpleType>
 
