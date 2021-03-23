@@ -1,7 +1,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-            <xsd:include schemaLocation="Esquema 2.xsd"/>
-            <xsd:include schemaLocation="Esquema 3.xsd"/>
+            <xsd:include schemaLocation="Esquema Meritos.xsd"/>
+            <xsd:include schemaLocation="Esquema Tribunal Jueces.xsd"/>
 
     <xsd:element name="tipoClases" type="tipoClases" />
 

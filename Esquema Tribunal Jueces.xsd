@@ -1,6 +1,6 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-            <xsd:include schemaLocation="Esquema 2.xsd"/>
+            <xsd:include schemaLocation="Esquema Meritos.xsd"/>
     <xsd:complexType name="tipoTribunal">
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
