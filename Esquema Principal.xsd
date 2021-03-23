@@ -19,8 +19,8 @@
                     <xsd:element name="tribunal" type="tipoTribunal" />
                     <xsd:element name="examen" type="examen" />
                     <xsd:element name="criterios" type="tipoCriterios" />
-                    <xsd:element name="resultados" type="tipoResultados" />
                     <xsd:element name="suspender" type="tipoSuspender" />
+                    <xsd:element name="resultados" type="tipoResultados" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
