@@ -5,8 +5,8 @@
     <xsd:include schemaLocation="Esquema Aspirante.xsd" />
     <xsd:include schemaLocation="Esquema Examen.xsd" />
     <xsd:include schemaLocation="Esquema Criterios.xsd" />
-    <xsd:include schemaLocation="Esquema Resultados.xsd" />
     <xsd:include schemaLocation="Esquema Suspender.xsd" />
+    <xsd:include schemaLocation="Esquema Resultados.xsd" />
 
     <xsd:element name="tipoClases" type="tipoClases" />
 
