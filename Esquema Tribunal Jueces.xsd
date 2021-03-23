@@ -1,21 +1,21 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-            <xsd:include schemaLocation="Esquema Meritos.xsd"/>
+    <xsd:include schemaLocation="Esquema Principal.xsd" />
     <xsd:complexType name="tipoTribunal">
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="juez" type="tipoJuez" minOccurs="1" maxOccurs="4"/>
+                    <xsd:element name="juez" type="tipoJuez" minOccurs="1" maxOccurs="4" />
                 </xsd:sequence>
-                <xsd:attribute name="jueces" type="tipoJueces"/>
+                <xsd:attribute name="jueces" type="tipoJueces" />
             </xsd:restriction>
         </xsd:complexContent>
     </xsd:complexType>
 
     <xsd:simpleType name="tipoJueces">
         <xsd:restriction base="xsd:short">
-            <xsd:minInclusive value="1"/>
-            <xsd:maxInclusive value="4"/>
+            <xsd:minInclusive value="1" />
+            <xsd:maxInclusive value="4" />
         </xsd:restriction>
     </xsd:simpleType>
 
@@ -23,12 +23,12 @@
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
-                    <xsd:element name="id_juez" type="tipoId" minOccurs="1" maxOccurs="1"/>
-                    <xsd:element name="nombre" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                    <xsd:element name="apellidos" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                    <xsd:element name="diplomaJuez" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
+                    <xsd:element name="id_juez" type="tipoId" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="nombre" type="xsd:string" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="apellidos" type="xsd:string" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="diplomaJuez" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>
     </xsd:complexType>
-    </xsd:schema>
+</xsd:schema>

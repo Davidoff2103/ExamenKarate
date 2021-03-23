@@ -1,0 +1,23 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   
+    <xsd:complexType name="tipoCriterios">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="indumentaria" type="tipoNota" minOccurs="1" />
+                    <xsd:element name="aseoPersonal" type="tipoNota" minOccurs="1" />
+                    <xsd:element name="ejecucionTecnica" type="tipoNota" minOccurs="1" />
+                    <xsd:element name="valores" type="tipoNota" minOccurs="1" />
+                    <xsd:element name="respuestas" type="tipoNota" minOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="tipoNota">
+        <xsd:restriction base="xsd:short">
+            <xsd:minInclusive value="0" />
+            <xsd:maxInclusive value="10" />
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

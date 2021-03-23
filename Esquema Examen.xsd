@@ -1,0 +1,131 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:complexType name="examen">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:choice>
+                    <xsd:element name="Hasta3erDan" type="tipoHasta" />
+                    <xsd:element name="CinturonNegro" type="tipoNegro" />
+                    <xsd:element name="CinturonNegroPrimerDan" type="tipoPrimer" />
+                    <xsd:element name="CinturonNegroSegundoDan" type="tipoSegundo" />
+                    <xsd:element name="CinturonNegroTercerDan" type="tipoTercer" />
+                    <xsd:element name="CinturonNegroCuartoDan" type="tipoCuarto" />
+                    <xsd:element name="QuintoDanYSuperior" type="tipoQuinto" />
+                </xsd:choice>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoHasta">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="tecnicas" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="campeonatos" type="tipoResultado" minOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoNegro">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="tecnica_directa" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_circulares" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_piernas" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="teoria" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoPrimer">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="tecnica_defensa" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_pierna" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_directaIndirecta" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_combinada" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="teoria" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicacion_tecnica" type="tipoResultado" minOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoSegundo">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="tecnica_base" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_directa" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_indirectaCircular" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_pierna" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica_combinada" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="teoria" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="campeonatos" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnicas" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicaciones" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicacion_teoria" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="demo_libre" type="tipoResultado" minOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoTercer">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="variaciones_tecnica" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicacion_tecnica" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="teoria" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="campeonatos" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="tecnica" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicaciones" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicacion_tecnica" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="demo_libre" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="attribute5" type="tipoResultado" minOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoCuarto">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="kumite" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="coloquio" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="aplicacion_tecnica" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="demo_libre" type="tipoResultado" minOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoQuinto">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="kata" type="tipoResultado" minOccurs="1" />
+                    <xsd:element name="coloquio" type="tipoResultado" minOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+</xsd:schema>

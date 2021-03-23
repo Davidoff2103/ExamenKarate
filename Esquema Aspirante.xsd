@@ -1,0 +1,70 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:complexType name="tipoAspirante">
+        <xsd:complexContent>
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:element name="id_aspirante" type="tipoId" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="nombre" type="xsd:string" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="apellidos" type="xsd:string" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="DNI" type="tipoDNI" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="telefono" type="tipoTelefono" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="direccion" type="xsd:string" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="fecha_nacimiento" type="xsd:date" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="dan" type="xsd:short" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="cinturon" type="tipoCinturon" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="fecha_ingreso_dan" type="xsd:date" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="fotoAspirante" type="tipoFoto" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="tiempo_dan_anterior" type="tipoTiempo" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="fotoDNI" type="tipoFoto" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="fotoCarnetGrados" type="tipoFoto" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="abonarCuota" type="tipoCuota" minOccurs="1" maxOccurs="1" />
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="tipoDNI">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{8}[A-Z]{1}" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoTelefono">
+        <xsd:restriction base="xsd:integer">
+            <xsd:pattern value="[6-7]{1}[0-9]{8}" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoCinturon">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Blanco" />
+            <xsd:enumeration value="Amarillo" />
+            <xsd:enumeration value="Naranja" />
+            <xsd:enumeration value="Azul" />
+            <xsd:enumeration value="Verde" />
+            <xsd:enumeration value="Violeta" />
+            <xsd:enumeration value="Marrón" />
+            <xsd:enumeration value="Negro" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoTiempo">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[1-9]+ meses" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoFoto">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[a-zA-Z]+.png" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoCuota">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Sí" />
+            <xsd:enumeration value="No" />
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
