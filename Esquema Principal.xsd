@@ -6,6 +6,7 @@
     <xsd:include schemaLocation="Esquema Examen.xsd" />
     <xsd:include schemaLocation="Esquema Criterios.xsd" />
     <xsd:include schemaLocation="Esquema Resultados.xsd" />
+    <xsd:include schemaLocation="Esquema Suspender.xsd" />
 
     <xsd:element name="tipoClases" type="tipoClases" />
 
@@ -19,6 +20,7 @@
                     <xsd:element name="examen" type="examen" />
                     <xsd:element name="criterios" type="tipoCriterios" />
                     <xsd:element name="resultados" type="tipoResultados" />
+                    <xsd:element name="suspender" type="tipoSuspender" />
                 </xsd:sequence>
             </xsd:restriction>
         </xsd:complexContent>

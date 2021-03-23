@@ -353,6 +353,67 @@ criterios respuestas::before {
     font-weight: bold;
 }
 
+suspender {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+suspender id_aspirante::before {
+    content: "ID Aspirante: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+suspender suspendeParcial::before {
+    content: "Suspende parcial: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+suspender suspendeTotal::before {
+    content: "Suspende total: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+suspender suspendeSegundaFase::before {
+    content: "Suspende segunda fase: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+suspender id_aspirante {
+    background: green;
+    color: white;
+    display: block;
+    border: black 1px solid;
+    padding: 10px;
+}
+
+suspender suspendeParcial {
+    background: rgb(0, 255, 0);
+    display: block;
+    border: black 1px solid;
+    padding: 10px;
+}
+
+suspender suspendeTotal {
+    background: rgb(0, 255, 0);
+    display: block;
+    border: black 1px solid;
+    padding: 10px;
+}
+
+suspender suspendeSegundaFase {
+    background: rgb(0, 255, 0);
+    display: block;
+    border: black 1px solid;
+    padding: 10px;
+}
 
 resultados{
     display: block;

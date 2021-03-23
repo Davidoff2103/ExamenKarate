@@ -62,4 +62,11 @@
         <id_aspirante>001</id_aspirante>
         <resultado>Apto</resultado>
     </resultados>
+
+    <suspender>
+        <id_aspirante>001</id_aspirante>
+        <suspendeParcial>false</suspendeParcial>
+        <suspendeTotal>false</suspendeTotal>
+        <suspendeSegundaFase>false</suspendeSegundaFase>
+    </suspender>
 </tipoClases>
