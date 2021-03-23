@@ -1,5 +1,5 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-   
+    <!-- Se declaran todos los elementos, cada uno con unas restricciones concretas -->
     <xsd:complexType name="tipoCriterios">
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
@@ -14,6 +14,7 @@
         </xsd:complexContent>
     </xsd:complexType>
 
+    <!-- La nota de los criterios debe estar entre 0 y 10-->
     <xsd:simpleType name="tipoNota">
         <xsd:restriction base="xsd:short">
             <xsd:minInclusive value="0" />

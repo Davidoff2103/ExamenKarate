@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="estilo.css"?>
+<!-- Se hace la llamada al schema -->
 <tipoClases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Esquema Principal.xsd">
+    <!-- Todas las clases con sus correspondientes elementos y atributos -->
     <aspirante>
         <id_aspirante>001</id_aspirante>
         <nombre>Antonio</nombre>

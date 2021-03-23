@@ -1,6 +1,8 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- Incluye el esquema principal porque hay elementos comunes -->
     <xsd:include schemaLocation="Esquema Principal.xsd" />
-
+    
+    <!-- Se declaran todos los elementos, cada uno con unas restricciones concretas -->
     <xsd:complexType name="tipoAspirante">
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
@@ -25,18 +27,21 @@
         </xsd:complexContent>
     </xsd:complexType>
 
+    <!-- El DNI tiene que tener 8 números y una letra-->
     <xsd:simpleType name="tipoDNI">
         <xsd:restriction base="xsd:string">
             <xsd:pattern value="[0-9]{8}[A-Z]{1}" />
         </xsd:restriction>
     </xsd:simpleType>
 
+    <!-- El teléfono tiene que estar formado por 9 números, empezando por 6 o 7-->
     <xsd:simpleType name="tipoTelefono">
         <xsd:restriction base="xsd:integer">
             <xsd:pattern value="[6-7]{1}[0-9]{8}" />
         </xsd:restriction>
     </xsd:simpleType>
 
+    <!-- El cinturón solo puede ser de unos colores determinados-->
     <xsd:simpleType name="tipoCinturon">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Blanco" />
@@ -50,18 +55,21 @@
         </xsd:restriction>
     </xsd:simpleType>
 
+    <!-- El tiempo será en meses-->
     <xsd:simpleType name="tipoTiempo">
         <xsd:restriction base="xsd:string">
             <xsd:pattern value="[1-9]+ meses" />
         </xsd:restriction>
     </xsd:simpleType>
 
+    <!-- La foto tiene que ser en formato png-->
     <xsd:simpleType name="tipoFoto">
         <xsd:restriction base="xsd:string">
             <xsd:pattern value="[a-zA-Z]+.png" />
         </xsd:restriction>
     </xsd:simpleType>
 
+    <!-- La cuota sí está pagada o no-->
     <xsd:simpleType name="tipoCuota">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Sí" />

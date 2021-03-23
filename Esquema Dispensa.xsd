@@ -1,6 +1,8 @@
  <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- Incluye el esquema principal porque hay elementos comunes -->
     <xsd:include schemaLocation="Esquema Principal.xsd" />
-
+    
+    <!-- Se declaran todos los elementos, cada uno con unas restricciones concretas -->
     <xsd:complexType name="tipoDispensa">
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
@@ -12,6 +14,7 @@
         </xsd:complexContent>
     </xsd:complexType>
 
+    <!-- La dispensa médica sí se tiene o no -->
     <xsd:simpleType name="tipoMedico">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Sí" />

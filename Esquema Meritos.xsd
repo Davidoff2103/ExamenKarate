@@ -1,6 +1,8 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- Incluye el esquema principal porque hay elementos comunes -->
     <xsd:include schemaLocation="Esquema Principal.xsd" />
 
+    <!-- Se declaran todos los elementos, cada uno con unas restricciones concretas -->
     <xsd:complexType name="tipoMeritos">
         <xsd:complexContent>
             <xsd:restriction base="xsd:anyType">
@@ -13,4 +15,12 @@
             </xsd:restriction>
         </xsd:complexContent>
     </xsd:complexType>
+
+        <!-- La edad deberá ser entre 15 y 100 años -->
+    <xsd:simpleType name="tipoEdad">
+        <xsd:restriction base="xsd:short">
+            <xsd:minInclusive value="15" />
+            <xsd:maxInclusive value="100" />
+        </xsd:restriction>
+    </xsd:simpleType>
 </xsd:schema>
