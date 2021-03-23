@@ -1,8 +1,9 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
+    <xsd:include schemaLocation="Esquema Aspirante.xsd" />
+    <xsd:include schemaLocation="Esquema Dispensa.xsd" />   
     <xsd:include schemaLocation="Esquema Meritos.xsd" />
     <xsd:include schemaLocation="Esquema Tribunal Jueces.xsd" />
-    <xsd:include schemaLocation="Esquema Aspirante.xsd" />
     <xsd:include schemaLocation="Esquema Examen.xsd" />
     <xsd:include schemaLocation="Esquema Criterios.xsd" />
     <xsd:include schemaLocation="Esquema Suspender.xsd" />
@@ -15,6 +16,7 @@
             <xsd:restriction base="xsd:anyType">
                 <xsd:sequence>
                     <xsd:element name="aspirante" type="tipoAspirante" />
+                    <xsd:element name="dispensaMedica" type="tipoDispensa" />
                     <xsd:element name="meritosAspirante" type="tipoMeritos" />
                     <xsd:element name="tribunal" type="tipoTribunal" />
                     <xsd:element name="examen" type="examen" />

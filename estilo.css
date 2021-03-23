@@ -175,6 +175,42 @@ aspirante abonarCuota::before {
     font-weight: bold;
 }
 
+dispensaMedica {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+dispensaMedica id_aspirante::before {
+    content: "ID Aspirante: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+dispensaMedica dispensa::before {
+    content: "Dispensa Médica: ";
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+dispensaMedica id_aspirante {
+    background: green;
+    color: white;
+    display: block;
+    border: black 1px solid;
+    padding: 10px;
+}
+
+dispensaMedica dispensa {
+    background: rgb(0, 255, 0);
+    display: block;
+    border: black 1px solid;
+    padding: 10px;
+}
+
 meritosAspirante id_aspirante::before {
     content: "ID Aspirante: ";
     text-decoration: underline;
