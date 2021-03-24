@@ -1,5 +1,12 @@
 html {
   background: #2ecc71;
+  font-family: Cambria,
+    Cochin,
+    Georgia,
+    Times,
+    'Times New Roman',
+    serif;
+
 }
 
 #about,
@@ -22,8 +29,6 @@ html {
   font-weight: bold;
   position: absolute;
   text-transform: uppercase;
-  font-family: 'Stalinist One',
-    cursive;
 
 }
 
@@ -44,7 +49,6 @@ html {
 }
 
 #about::after {
-  /*background-color: #f00;*/
   height: 100%;
   left: -35%;
   top: 0;
