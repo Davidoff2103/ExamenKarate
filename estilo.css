@@ -1,5 +1,4 @@
 tipoClases {
-    display: block;
     background: #2ecc71;
     margin: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -20,9 +19,11 @@ meritosAspirante {
 
 meritosAspirante {
     margin-top: 10px;
-    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 meritosAspirante id_aspirante:hover,
@@ -47,12 +48,18 @@ aspirante fotoAspirante,
 aspirante tiempo_dan_anterior,
 aspirante fotoDNI,
 aspirante fotoCarnetGrados,
-aspirante abonarCuota,
+aspirante abonarCuota {
+    display: table-cell;
+    border: red 1.5px solid;
+    padding: 5px;
+    text-align: center;
+}
+
 meritosAspirante id_aspirante,
 meritosAspirante edad_aspirante,
 meritosAspirante licenciaActualizada,
 meritosAspirante trabajoEscrito {
-    display: table-cell;
+    display: block;
     border: red 1.5px solid;
     padding: 5px;
 }
@@ -249,7 +256,6 @@ meritosAspirante trabajoEscrito::before {
     font-weight: bold;
 }
 
-
 tribunal juez {
     background-color: blue;
     display: block;
@@ -261,7 +267,8 @@ tribunal juez nombre,
 tribunal juez apellidos,
 tribunal juez diplomaJuez {
     background: lightblue;
-    display: block;
+    display: list-item;
+    margin-left: 20px;
     border: blue 1px solid;
     padding: 10px;
 }
@@ -303,6 +310,10 @@ criterios {
     display: block;
     background: white;
     padding: 5px;
+}
+
+examen Hasta3erDan {
+    margin-top: 30px;
 }
 
 examen Hasta3erDan tecnicas,
@@ -461,11 +472,9 @@ suspender suspendeSegundaFase {
 
 resultados {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     background: white;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
