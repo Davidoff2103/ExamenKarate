@@ -301,7 +301,7 @@ tribunal juez diplomaJuez::before {
 examen Hasta3erDan,
 criterios {
     display: block;
-    background: black;
+    background: white;
     padding: 5px;
 }
 
