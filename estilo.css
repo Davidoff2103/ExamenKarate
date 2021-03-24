@@ -262,7 +262,14 @@ tribunal juez {
     padding: 5px;
 }
 
-tribunal juez id_juez,
+tribunal juez id_juez{
+    background: blue;
+    display: list-item;
+    margin-left: 20px;
+    border: blue 1px solid;
+    padding: 10px;
+    color:white;
+}
 tribunal juez nombre,
 tribunal juez apellidos,
 tribunal juez diplomaJuez {
@@ -273,7 +280,12 @@ tribunal juez diplomaJuez {
     padding: 10px;
 }
 
-tribunal juez id_juez:hover,
+tribunal juez id_juez:hover {
+    background: white;
+    transition: 0.5s;
+    color:black;
+}
+
 tribunal juez nombre:hover,
 tribunal juez apellidos:hover,
 tribunal juez diplomaJuez:hover {
