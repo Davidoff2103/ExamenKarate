@@ -3,9 +3,25 @@ tipoClases {
     margin: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
+tipoClases::before{
+    content: "Examen Hasta 3er DAN";
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    height: 60px;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border: white 5px solid;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 aspirante::before {
-    content: "Datos aspirante: ";
+    content: "Datos aspirante:";
     display: table-cell;
     border: red 1px solid;
     background: red;
@@ -16,7 +32,7 @@ aspirante::before {
 }
 
 dispensaMedica::before {
-    content: "Dispensa médica: ";
+    content: "Dispensa médica:";
     display: table-cell;
     border-bottom: white 5px solid;
     background: green;
@@ -30,7 +46,7 @@ dispensaMedica::before {
 }
 
 meritosAspirante::before {
-    content: "Méritos del aspirante: ";
+    content: "Méritos del aspirante:";
     display: table-cell;
     border: red 2px solid;
     background: red;
@@ -44,9 +60,11 @@ meritosAspirante::before {
 }
 
 tribunal::before {
-    content: "Miembros del tribunal: ";
+    content: "Miembros del tribunal:";
     display: table-cell;
-    border: blue 5px solid;
+    border-top: blue 5px solid;
+    border-left: blue 5px solid;
+    border-right: blue 5px solid;
     background: lightblue;
     color: black;
     font-weight: bold;
@@ -60,7 +78,7 @@ tribunal::before {
 }
 
 Hasta3erDan::before {
-    content: "Méritos del aspirante: ";
+    content: "Méritos del aspirante:";
     display: table-cell;
     border-bottom: white 5px solid;
     background: green;
@@ -74,7 +92,7 @@ Hasta3erDan::before {
 }
 
 criterios::before {
-    content: "Criterios de evaluación: ";
+    content: "Criterios de evaluación:";
     display: table-cell;
     border-bottom: white 5px solid;
     background: green;
@@ -88,7 +106,7 @@ criterios::before {
 }
 
 resultados::before {
-    content: "Resultados finales: ";
+    content: "Resultados finales:";
     display: table-cell;
     border-bottom: white 5px solid;
     background: green;
@@ -102,7 +120,6 @@ resultados::before {
 }
 
 aspirante {
-    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
