@@ -4,6 +4,103 @@ tipoClases {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+aspirante::before {
+    content: "Datos aspirante: ";
+    display: table-cell;
+    border: red 1px solid;
+    background: red;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-left: 2px;
+}
+
+dispensaMedica::before {
+    content: "Dispensa médica: ";
+    display: table-cell;
+    border-bottom: white 5px solid;
+    background: green;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+meritosAspirante::before {
+    content: "Méritos del aspirante: ";
+    display: table-cell;
+    border: red 2px solid;
+    background: red;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tribunal::before {
+    content: "Miembros del tribunal: ";
+    display: table-cell;
+    border: blue 5px solid;
+    background: lightblue;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+Hasta3erDan::before {
+    content: "Méritos del aspirante: ";
+    display: table-cell;
+    border-bottom: white 5px solid;
+    background: green;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+criterios::before {
+    content: "Criterios de evaluación: ";
+    display: table-cell;
+    border-bottom: white 5px solid;
+    background: green;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+resultados::before {
+    content: "Resultados finales: ";
+    display: table-cell;
+    border-bottom: white 5px solid;
+    background: green;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 aspirante {
     margin-top: 10px;
     margin-left: 10px;
@@ -199,19 +296,28 @@ resultados resultado:hover {
 }
 
 dispensaMedica,
-tribunal juez,
 examen Hasta3erDan,
-criterios,
 suspender {
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 10px;
 }
 
+tribunal juez {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 dispensaMedica {
     display: block;
     background: white;
     padding: 5px;
+}
+
+criterios {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
 }
 
 dispensaMedica id_aspirante::before {
