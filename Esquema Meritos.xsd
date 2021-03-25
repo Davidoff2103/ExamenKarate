@@ -16,7 +16,7 @@
         </xsd:complexContent>
     </xsd:complexType>
 
-        <!-- La edad deberá ser entre 15 y 100 años -->
+    <!-- La edad deberá ser entre 15 y 100 años -->
     <xsd:simpleType name="tipoEdad">
         <xsd:restriction base="xsd:short">
             <xsd:minInclusive value="15" />

@@ -1,16 +1,16 @@
  <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <!-- Incluye el esquema principal porque hay elementos comunes -->
-    <xsd:include schemaLocation="Esquema Principal.xsd" />
-    
-    <!-- Se declaran todos los elementos, cada uno con unas restricciones concretas -->
-    <xsd:complexType name="tipoResultados">
-        <xsd:complexContent>
-            <xsd:restriction base="xsd:anyType">
-                <xsd:sequence>
-                    <xsd:element name="id_aspirante" type="tipoId" minOccurs="1" maxOccurs="1" />
-                    <xsd:element name="resultado" type="tipoResultado" minOccurs="1" maxOccurs="1" />
-                </xsd:sequence>
-            </xsd:restriction>
-        </xsd:complexContent>
-    </xsd:complexType>
-</xsd:schema>
+     <!-- Incluye el esquema principal porque hay elementos comunes -->
+     <xsd:include schemaLocation="Esquema Principal.xsd" />
+
+     <!-- Se declaran todos los elementos, cada uno con unas restricciones concretas -->
+     <xsd:complexType name="tipoResultados">
+         <xsd:complexContent>
+             <xsd:restriction base="xsd:anyType">
+                 <xsd:sequence>
+                     <xsd:element name="id_aspirante" type="tipoId" minOccurs="1" maxOccurs="1" />
+                     <xsd:element name="resultado" type="tipoResultado" minOccurs="1" maxOccurs="1" />
+                 </xsd:sequence>
+             </xsd:restriction>
+         </xsd:complexContent>
+     </xsd:complexType>
+ </xsd:schema>

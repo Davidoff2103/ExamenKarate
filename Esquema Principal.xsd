@@ -1,14 +1,14 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <!-- Incluye todos los esquemas -->
     <xsd:include schemaLocation="Esquema Aspirante.xsd" />
-    <xsd:include schemaLocation="Esquema Dispensa.xsd" />   
+    <xsd:include schemaLocation="Esquema Dispensa.xsd" />
     <xsd:include schemaLocation="Esquema Meritos.xsd" />
     <xsd:include schemaLocation="Esquema Tribunal Jueces.xsd" />
     <xsd:include schemaLocation="Esquema Examen.xsd" />
     <xsd:include schemaLocation="Esquema Criterios.xsd" />
     <xsd:include schemaLocation="Esquema Suspender.xsd" />
     <xsd:include schemaLocation="Esquema Resultados.xsd" />
-    
+
     <!-- Se declaran todos los elementos, cada uno con unas restricciones concretas -->
     <xsd:element name="tipoClases" type="tipoClases" />
     <xsd:complexType name="tipoClases">
@@ -29,7 +29,7 @@
     </xsd:complexType>
 
     <!-- Hay elementos comunes para más de una clase, así que las guardo en el archivo principal -->
-    
+
     <!-- La ID será un número de 3 cifras -->
     <xsd:simpleType name="tipoId">
         <xsd:restriction base="xsd:integer">

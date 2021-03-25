@@ -189,6 +189,15 @@ aspirante abonarCuota::before {
     font-weight: bold;
 }
 
+dispensaMedica dispensa:hover,
+suspender suspendeParcial:hover,
+suspender suspendeTotal:hover,
+suspender suspendeSegundaFase:hover,
+resultados resultado:hover {
+    background-color: greenyellow;
+    transition: 0.5s;
+}
+
 dispensaMedica,
 tribunal juez,
 examen Hasta3erDan,
@@ -262,14 +271,15 @@ tribunal juez {
     padding: 5px;
 }
 
-tribunal juez id_juez{
+tribunal juez id_juez {
     background: blue;
     display: list-item;
     margin-left: 20px;
     border: blue 1px solid;
     padding: 10px;
-    color:white;
+    color: white;
 }
+
 tribunal juez nombre,
 tribunal juez apellidos,
 tribunal juez diplomaJuez {
@@ -283,7 +293,7 @@ tribunal juez diplomaJuez {
 tribunal juez id_juez:hover {
     background: white;
     transition: 0.5s;
-    color:black;
+    color: black;
 }
 
 tribunal juez nombre:hover,
