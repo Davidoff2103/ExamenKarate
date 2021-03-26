@@ -3,7 +3,8 @@ tipoClases {
     margin: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-tipoClases::before{
+
+tipoClases::before {
     content: "Examen Hasta 3er DAN";
     font-size: 200%;
     display: flex;
@@ -20,6 +21,7 @@ tipoClases::before{
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 aspirante::before {
     content: "Datos aspirante:";
     display: table-cell;
